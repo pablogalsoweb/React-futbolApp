@@ -1,0 +1,110 @@
+body {
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  align-items: center;
+  justify-content: center; 
+  margin: 0;
+}
+
+#root {  
+  margin: 0;
+  padding: 0rem;
+  text-align: center; 
+}
+ 
+.logo { 
+  padding: 1.5em;
+  position: relative;
+  top: 0px;
+  cursor: pointer;
+} 
+
+.titulo-home{
+  background-color: #222;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.titulo-home p{
+  padding: 0px;
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.listado_equipos{
+  display: flex;
+  flex-wrap: wrap;  
+  padding: 0px 20px;
+}
+.escudos{ 
+  flex-grow: 2;
+  padding: 1.5rem;
+}
+.escudos p{ 
+  color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.escudos .logo{
+  padding: 0px; 
+}
+
+.logo.gris {
+  filter: grayscale(100%);
+}
+
+.appear-buttom{
+  text-transform: uppercase;
+   background-color: #191a19;
+   color: #ffffff;
+   font-weight: 100;
+   padding: 10px 30px;
+   border: solid 2px #191a19;
+   font-size: 20px;
+}
+.appear-buttom:hover{
+  background-color: #dcdfd1;
+  color: #1a1a1a;
+  border: solid 2px #1a1a1a; 
+}
+
+@keyframes appearAnimation {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.appear-buttom {
+  animation: appearAnimation 0.5s ease-in-out; /* Cambia la duración a 2 segundos */
+}
+
+.separacion{ 
+    color: #ffffff;
+    border-radius: 10px;
+    border: solid;
+    height: 3px;
+    width: 30px;
+    background-color: #ffffff;
+    align-self: center;
+}
+
+.partido .escudos .logo{ 
+  width: 100%;
+  max-width: 140px;
+}
+
+.tiempo{
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9); 
+  line-height: 10px; 
+}
