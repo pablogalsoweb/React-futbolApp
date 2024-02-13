@@ -41,7 +41,7 @@ body {
 }
 .escudos{ 
   flex-grow: 2;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0.2rem 1.5rem;
 }
 .escudos p{ 
   color: #ffffff;
@@ -106,5 +106,5 @@ body {
   font-size: 40px;
   color: #ffffff;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9); 
-  line-height: 10px; 
+  line-height: 70px; 
 }

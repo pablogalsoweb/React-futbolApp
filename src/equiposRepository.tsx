@@ -1,9 +1,10 @@
+import { EquiposDataType } from './functions/interfaces';
 
-export const equiposData = {
+export const equiposData: EquiposDataType = {
     'Real Betis' : {
         'id'        : 1,
         'escudo'    : 'escudo-betis.png',
-        'escudo-gris'    : 'escudo-betis.png',
+        'escudo-gris' : 'escudo-betis.png',
         'defensa'   : 60,
         'medio'     : 60,
         'ataque'    : 50,
@@ -15,6 +16,7 @@ export const equiposData = {
     'Sevilla' : {
         'id'        : 1,
         'escudo'    : 'escudo-sevilla.png',
+        'escudo-gris' : 'escudo-sevilla.png',
         'defensa'   : 60,
         'medio'     : 60,
         'ataque'    : 50,
@@ -26,6 +28,7 @@ export const equiposData = {
     'FC.Barcelona' : {
         'id'        : 1,
         'escudo'    : 'escudo-barcelona.png',
+        'escudo-gris' : 'escudo-barcelona.png',
         'defensa'   : 60,
         'medio'     : 60,
         'ataque'    : 50,
@@ -37,6 +40,7 @@ export const equiposData = {
     'Real Madrid' : {
         'id'        : 1,
         'escudo'    : 'escudo-madrid.png',
+        'escudo-gris' : 'escudo-madrid.png',
         'defensa'   : 60,
         'medio'     : 60,
         'ataque'    : 50,

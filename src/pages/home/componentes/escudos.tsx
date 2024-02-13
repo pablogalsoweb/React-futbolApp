@@ -1,4 +1,7 @@
-function yaEstaElegido(equiposElegido, equipoPulsado){
+import { EscudosProps, equiposElegidosType } from '../../../functions/interfaces';
+
+
+function yaEstaElegido(equiposElegido:equiposElegidosType, equipoPulsado:string){
     const escudoYaElegido = Object.entries(equiposElegido).find(([propiedad, valor]) => valor === equipoPulsado) || [];
     if(escudoYaElegido.length > 0){
        return true;
@@ -6,7 +9,7 @@ function yaEstaElegido(equiposElegido, equipoPulsado){
     return false;
 }
 
-export function Escudos({clickElegirEquipo, nombreEquipo, equipoData, equiposElegido, escudoActivo}){
+export function Escudos({clickElegirEquipo, nombreEquipo, equipoData, equiposElegido}:EscudosProps){
          
     const styleGreyImage = yaEstaElegido(equiposElegido, nombreEquipo) ? '' : 'gris';
 
